@@ -72,6 +72,9 @@ body{
 }
 .profile_container{
     position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
    
 }
 .card{
@@ -165,8 +168,11 @@ button,a{
 .card_discreption_section{
     display: flex;
     gap:1rem;
-    flex-wrap: wrap;
+    width: 100%;
+  
+   
 }
+
 @keyframes MoveTop{
     0%{
         transform:translateY(0)
@@ -186,4 +192,20 @@ transform: translateY(400px);
     }100%{
         transform: translateY(0px);
     }
+}
+
+@media screen and (max-width:1000px){
+    .card_discreption_section{
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+        align-items: center;
+    }
+}
+@media screen and (max-width:768px){
+    .card{
+        width: 100%;
+        max-width: 100%;
+    }
+
 }

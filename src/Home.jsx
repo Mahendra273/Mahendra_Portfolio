@@ -3,7 +3,7 @@ import ProfileCard from './ProfileCard'
 export default function Home() {
   return (
     <>
-    <div style={{display:"flex",gap:'1rem'}}>
+    <div className='card_discreption_section'>
     <ProfileCard/>
     <div className='description_container'>
       <p className='caption'>
