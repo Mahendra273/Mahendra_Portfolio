@@ -1,5 +1,6 @@
 import React from 'react'
 import pic from '../images/profile.jpg'
+import mypdf from '../images/Mahendra_yarrappa.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -33,7 +34,7 @@ export default function ProfileCard() {
    
     </ul>
     <div className='card__content_buttons'>
-        <button className='card__small_btn'>Resume</button>
+        <a className='card__small_btn' href={mypdf} target='_blank'>Resume</a>
         <button className='card__small_btn'>Contact</button>
       </div>
   </div>
