@@ -1,6 +1,7 @@
 import React from 'react'
 import pic from '../images/profile.jpg'
 import mypdf from '../images/Mahendra_yarrappa.pdf'
+import mypdf1 from '../images/Mahendra_yarrappa1.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
