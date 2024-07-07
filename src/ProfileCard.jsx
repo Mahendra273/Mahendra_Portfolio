@@ -9,7 +9,7 @@ import { faLinkedin, faGithub,faWhatsapp} from '@fortawesome/free-brands-svg-ico
 
 export default function ProfileCard() {
   let phoneNumber='8328157703'
-  let email="mahendrayarappa.gmail.com"
+
   return (
     <>    <div className='profile_container'>
    
@@ -35,7 +35,8 @@ export default function ProfileCard() {
         </a>
       </li>
       <li className="card__content-social" target="_blank">
-        <a className="email" href={`mailto:${email}`}>
+      <a className="email" href='mailto:mahendrayarappa@gmail.com' target='_blank'>
+
         <FontAwesomeIcon icon={faEnvelope} size="lg" color='#333'/>
         </a>
       </li>
