@@ -6,10 +6,11 @@
 font-family: system-ui;
 }
 body{
-    color: var(--color-white);
+    color: #333;
     font-family: system-ui;
     line-height: 1;
     margin: 0;
+ 
     
 }
 *{
@@ -17,7 +18,12 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+.col-flex{
+    display: flex;
+    flex-direction: column;
+    gap:0.25rem;
+}
+.outer_container{
     background-color: #fff;
     width: 100%;
     height: 90vh;
@@ -49,13 +55,15 @@ body{
     -webkit-transition: all 0.5s ease;
 }
 .link_item:hover,
-.contact_link:hover
+.contact_link:hover,
+.link_item.active
 {
     background: var(--background-hover);
     color: #fff;
 }
 .main_link_tabs{
     display: flex;
+    gap:5px;
     justify-content: space-around;
 }
 .contact_link{
@@ -69,6 +77,7 @@ body{
     transition: all 0.4s;
     background: var(--background);
     -webkit-transition: all 0.5s ease;
+    white-space: nowrap;
 }
 .profile_container{
     position: relative;
@@ -78,8 +87,8 @@ body{
    
 }
 .card{
-    width: 400px;
-    height: 500px;
+    width:380px;
+    height: fit-content;
     position:relative;
     left: 0;
     padding: 0;
@@ -95,7 +104,7 @@ body{
     justify-content: flex-start;
     align-items: center;
     gap:2rem;
-    padding: 1.25rem;
+    padding:2rem;
     color: #ffffff;
     backdrop-filter: blur(10px);
     width: inherit;
@@ -116,6 +125,7 @@ body{
     border-radius: 100%;
     background-color: #ff7c7c;
     position: absolute;
+    display: none;
 }
 
 .card__background-circle:nth-child(1) {
@@ -133,7 +143,7 @@ body{
     display: flex;
     list-style-type: none;
     justify-content: center;
-    gap: 0.75rem;
+    gap: 2rem;
     width: 100%;
 }
 
@@ -154,6 +164,16 @@ body{
 button,a{
     cursor: pointer;
 }
+.h2-headings{
+    font-size: 20px;
+    color: #161515;
+    line-height: 120%; 
+}
+.h4-headings{
+    font-size: 16px;
+    color: #161515;
+    line-height: 120%; 
+}
 .caption{
     font-size: 14px;
     color: #161515;
@@ -170,7 +190,9 @@ button,a{
     gap:1rem;
     width: 100%;
   
-   
+}
+.card__content-section> *{
+    color: #ce93d88c;
 }
 
 @keyframes MoveTop{
@@ -178,7 +200,7 @@ button,a{
         transform:translateY(0)
 
     }50%{
-transform: translateY(-400px);
+transform: translateY(-350px);
     }100%{
         transform: translateY(0px);
     }
@@ -188,7 +210,7 @@ transform: translateY(-400px);
         transform:translateY(0)
 
     }50%{
-transform: translateY(400px);
+transform: translateY(350px);
     }100%{
         transform: translateY(0px);
     }
@@ -207,5 +229,31 @@ transform: translateY(400px);
         width: 100%;
         max-width: 100%;
     }
+
+}
+
+
+@media screen and (max-width:375px) {
+    .main_link_tabs{
+        justify-content:flex-start;
+        gap:1rem;
+        flex-wrap: wrap;
+    }
+    .outer_container{
+        padding: 1rem 1.25rem;
+    }
+   .contact_link{
+   padding: 10px 20px;
+   font-size: 14px;
+   }
+   .card__content_buttons{
+    gap:1rem;
+   }
+   .card__content{
+    padding: 0.75rem;
+   }
+   .main_link_tabs a{
+    font-size: 14px;
+   }
 
 }

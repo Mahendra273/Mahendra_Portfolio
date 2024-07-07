@@ -1,0 +1,27 @@
+{
+    "skills": [
+      {
+        "skillName": "HTML",
+        "icon": "html5",
+        "skillLog": ""
+      },
+      {
+        "skillName": "CSS",
+        "icon": "css",
+        "skillLog": ""
+      },
+      {
+        "skillName": "JavaScript",
+        "icon": "js",
+        "skillLog": ""
+      },
+      {
+        "skillName": "React",
+        "icon": "react",
+        "skillLog": ""
+      }
+
+    
+    ]
+  }
+  

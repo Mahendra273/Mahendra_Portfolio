@@ -6,12 +6,20 @@ export default function Home() {
     <div className='card_discreption_section'>
     <ProfileCard/>
     <div className='description_container'>
+    <div className='col-flex'>
+      <h2 className='h2-headings'>Summary</h2>
       <p className='caption'>
-      Innovative FrontEnd Developer with a keen interest in building
-user-centric products. Detail oriented professional with a knack to learn
-new technologies. Looking forward to leverage my experience and
-hands-on technical expertise in a challenging role as a Developer.
+      Enthusiastic Software Developer with 2+ years of experience in the development of web applications,
+      possessing robust proficiency in JavaScript DOM and React.js. Demonstrating expertise in crafting clear and
+       concise code, facilitating ease of maintenance and troubleshooting.
+
       </p>
+      </div>
+      <h2 className='h2-headings'>Experience</h2>
+      <div className='col-flex'>
+      <p className='caption'><b>Begalileo </b>| Software Developer</p>
+      <p className='caption'> May 2023 – Present | Bangalore, India</p>
+      </div>
     </div>
     </div>
     </>
