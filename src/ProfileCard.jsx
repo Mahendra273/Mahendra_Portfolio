@@ -1,6 +1,6 @@
 import React from 'react'
-import pic from '../images/profile.jpg'
-import mypdf from '../images/Mahendra_yarrappa.pdf'
+import pic from '../public/images/profile.jpg'
+import mypdf from '../public/images/Mahendra_yarrappa.pdf'
 //import mypdf1 from '../images/Mahendra_yarrappa1.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
