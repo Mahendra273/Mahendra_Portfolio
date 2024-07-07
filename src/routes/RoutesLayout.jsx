@@ -9,7 +9,7 @@ export default function RoutesLayout(){
         <>
         
             <Routes>
-            <Route index path="home" element={<Home/>}/>
+            <Route index path="/" element={<Home/>}/>
             <Route path="skills" element={<Skills/>}/>
             <Route path="contact" element={<Contact/>}/>
             </Routes>
