@@ -8,7 +8,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub,faWhatsapp} from '@fortawesome/free-brands-svg-icons';
 
 export default function ProfileCard() {
-  let phoneNumber='8328157703'
+  let phoneNumber='+91-9182885678'
 
   return (
     <>    <div className='profile_container'>
@@ -41,7 +41,11 @@ export default function ProfileCard() {
         </a>
       </li>
       <li className="card__content-social" >
-        <a className="whatsapp" href={`https://wa.me/${phoneNumber}`} target='_black'>
+      <a className="whatsapp" 
+   href={`https://api.whatsapp.com/send?phone=8328157703`} 
+   target='_blank' 
+   rel="noopener noreferrer">
+        
         <FontAwesomeIcon icon={faWhatsapp} size='lg' color='green'/>
         </a>
       </li>
