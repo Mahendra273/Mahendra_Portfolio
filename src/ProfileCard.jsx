@@ -42,7 +42,7 @@ export default function ProfileCard() {
       </li>
       <li className="card__content-social" >
       <a className="whatsapp" 
-   href={`https://api.whatsapp.com/send?phone=8328157703`} 
+   href={`https://api.whatsapp.com/send?phone=+918328157703`} 
    target='_blank' 
    rel="noopener noreferrer">
         
