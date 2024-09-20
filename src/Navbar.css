@@ -1,8 +1,9 @@
 
 :root{
 --color-white:#fff;
---background:linear-gradient(45deg, #9977cf, #ff7c7c);
---background-hover:linear-gradient(45deg,#ff7c7c, #9977cf);
+--background: rgb(163 138 250 / 76%);
+--background-hover:black;
+--button-bg:linear-gradient(to left,rgb(137, 104, 255),rgb(175, 152, 255));
 font-family: system-ui;
 }
 body{
@@ -39,7 +40,7 @@ body{
 .nav_bar{
     margin: 0;
     padding: 1rem;
-    background-color: #4f528d8a;
+    background:var(--background);
     color: var(--color-white);
     width: 100%;
 }
@@ -47,17 +48,18 @@ body{
     color: var(--color-white);
     font-family: system-ui;
     border-color: transparent;
-    padding: 10px 25px;
+    padding: 12px 25px;
     border-radius: 20px;
     text-align: center;
     line-height: 1;
     transition: all 0.8s ease;
-    background: transparent;
+    background: var(--button-bg);
     -webkit-transition: all 0.5s ease;
 }
 .link_item:hover,
 .contact_link:hover,
-.link_item.active
+.link_item.active,
+.card__small_btn:hover
 {
     background: var(--background-hover);
     color: #fff;
@@ -76,7 +78,7 @@ body{
     text-align: center;
     line-height: 1;
     transition: all 0.4s;
-    background: var(--background);
+    background: var(--button-bg);
     -webkit-transition: all 0.5s ease;
     white-space: nowrap;
 }
@@ -88,7 +90,7 @@ body{
    
 }
 .card{
-    width:380px;
+   
     height: fit-content;
     position:relative;
     left: 0;
@@ -111,7 +113,7 @@ body{
     width: inherit;
     height: inherit;
     border-radius: 5px;
-    background-color: #463a3a20;
+    background:var(--background);
     box-shadow: 0 0 8px #463a3a20;   
 }
 .card__content-section{
@@ -146,6 +148,7 @@ body{
     justify-content: center;
     gap: 2rem;
     width: 100%;
+   
 }
 
 .card__small_btn{
@@ -158,7 +161,7 @@ body{
     text-align: center;
     line-height: 1;
     transition: all 0.4s;
-    background: var(--background);
+    background: var(--button-bg);
     -webkit-transition: all 0.5s ease;
     width: 100%;
 }
@@ -258,3 +261,84 @@ transform: translateY(350px);
    }
 
 }
+
+
+
+  
+  
+.social-card {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: rgb(255, 255, 255);
+    padding: 15px 20px;
+    border-radius: 14px;
+  }
+  .Btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+    z-index: 2;
+  }
+  
+  .BG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #181818;
+    z-index: 1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all 0.3s;
+    font-size: 0px;
+  }
+  .github .BG {
+    background: #181818;
+  }
+  .linkdin .BG {
+    background: #0077b5;
+  }
+  .whatsapp .BG {
+    background: #075e54;
+  }
+  .email .BG {
+    background: #7289da;
+  }
+  .Btn:hover .BG {
+    transform: scale(1.3);
+    /* transform-origin: bottom; */
+    font-size: 20px;
+    color: white;
+  }
+  
+  .Btn:hover .svgContainer {
+    border: 1px solid rgba(216, 216, 216, 0.466);
+    background-color: rgba(209, 209, 209, 0.466);
+    backdrop-filter: blur(4px);
+  }
+  
