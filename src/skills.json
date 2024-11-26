@@ -1,20 +1,22 @@
 {
   "skills": [
     {
-      "skillName": "HTML5",
+      "skillName": "Web Developer",
       "icon": "html5"
     },
     {
-      "skillName": "CSS",
+      "skillName": "Front-end Developer",
       "icon": "css"
     },
+ 
     {
-      "skillName": "JavaScript",
-      "icon": "js"
-    },
-    {
-      "skillName": "React",
+      "skillName": "React Developer",
       "icon": "react"
     }
+    , {
+      "skillName": "Next Developer",
+      "icon": "Next"
+    }
+   
   ]
 }

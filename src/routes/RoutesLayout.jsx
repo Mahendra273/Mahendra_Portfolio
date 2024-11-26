@@ -1,20 +1,25 @@
 import React from "react";
-import { Routes,Route } from "react-router-dom";
-import Home from "../Home";
-import '../Navbar.css'
-import Skills from "../Skills";
-import Contact from "../Contact";
-export default function RoutesLayout(){
-    return(
+import { Routes, Route } from "react-router-dom";
+
+import '../global.css'
+import Contact from "../components/Contact";
+import Skills from "../components/Skills";
+import Home from "../components/Home";
+import About from "../components/About";
+
+export default function RoutesLayout() {
+    return (
         <>
-        
+
             <Routes>
-            <Route index path="/" element={<Home/>}/>
-            <Route path="skills" element={<Skills/>}/>
-            <Route path="contact" element={<Contact/>}/>
+                <Route index path="/" element={<Home />} />
+                <Route path="skills" element={<Skills />} />
+                <Route path="about" element={<About />} />
+                <Route path="contact" element={<Contact />} />
             </Routes>
-         
-    
+
+           
+
         </>
     )
 }

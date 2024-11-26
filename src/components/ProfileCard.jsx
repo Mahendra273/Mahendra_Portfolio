@@ -1,6 +1,6 @@
 import React from 'react';
-import pic from '../public/images/profile.jpg';
-import mypdf from '../public/images/Mahendra_yarrappa.pdf';
+import pic from '../../public/images/profile.jpg'
+import mypdf from '../../public/images/Mahendra_yarrappa.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub, faWhatsapp } from '@fortawesome/free-brands-svg-icons';

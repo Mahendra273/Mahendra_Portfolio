@@ -3,10 +3,11 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: auto;
    }
 .skill_main_conatiner{
    @include content_center;
+   background-color: #222428;
    flex-wrap: wrap;
 
     .skill_container{
@@ -14,8 +15,8 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        width: 80%;
-        gap:2rem;
+        width: 100%;
+     
 
         .skill_card{
             display: flex;
@@ -27,6 +28,8 @@
             border-radius: 10px;
             background-color: #fff;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            width: 250px;
+            height: 260px;
         img{
             width: 5rem;
             height: 5rem;
@@ -54,6 +57,22 @@
 }
 }
 
+
+.skills_card_small{
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & img,
+    & svg{
+        width: 40px;
+        height: 40px;
+    }
+}
 @media screen and (max-width:500px) {
     .contact_conatiner .card__content-list-social {
         flex-wrap: wrap;
@@ -61,4 +80,17 @@
         justify-content: flex-start;
     }
     
+}
+.animate-menu {
+   
+    animation: menu 0.5s linear;
+}
+
+@keyframes menu {
+    0% {
+       left: -100px;
+    }
+    100% {
+        left: 0px;
+    }
 }
