@@ -3,7 +3,8 @@
 
 import React from 'react';
 import pic from '../../public/images/profile.jpg'
-import mypdf from '../../public/images/Mahendra_yarrappa.pdf';
+// import mypdf from '../../public/images/Mahendra_yarrappa.pdf';
+import mypdf from '../../public/images/Mahendra_Front-end_Developer.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
@@ -64,7 +65,7 @@ const Name='Mahendra'
             </div>
 
             <div className='card__content_buttons p-1'>
-              <a className='card__small_btn' href={mypdf} target='_blank'>Resume</a>
+              <a className='card__small_btn' href={mypdf} target='_blank' download="Mahendra_Front-end_developer.pdf">Resume</a>
               <a className='card__small_btn' href='/contact'>Contact</a>
             </div>
             </div>
